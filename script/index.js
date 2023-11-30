@@ -10,6 +10,72 @@ const mainDiv = document.getElementById("holder")
 const skillsDiv = document.getElementById("skillsDiv")
 const projectsDiv = document.getElementById("projectsDiv")
 const bioDiv = document.getElementById("bioDiv")
+const activateButton = document.getElementById("activate")
+const firstDiv = document.getElementById("first")
+const holder1 = document.getElementById("holder1")
+const pfp = document.getElementById("pfp")
+const name = document.getElementById("name")
+const discord = document.getElementById("discord")
+const instagram = document.getElementById("instagram")
+const telegram = document.getElementById("telegram")
+const github = document.getElementById("github")
+
+
+
+discord.addEventListener("mouseover", function(){
+    discord.style.animationName = "expandIcons"
+    discord.style.animationDuration = "2s"
+    discord.style.width = "80px"
+    discord.style.height = "80px"
+})
+
+discord.addEventListener("mouseout", function() {
+    discord.style.animationName = "expandIcons2"
+    discord.style.animationDuration = "1s"
+    discord.style.width = "60px"
+    discord.style.height = "60px"
+})
+telegram.addEventListener("mouseover", function(){
+    telegram.style.animationName = "expandIcons"
+    telegram.style.animationDuration = "2s"
+    telegram.style.width = "80px"
+    telegram.style.height = "80px"
+})
+
+telegram.addEventListener("mouseout", function() {
+    telegram.style.animationName = "expandIcons2"
+    telegram.style.animationDuration = "1s"
+    telegram.style.height = "60px"
+    telegram.style.width = "60px"
+})
+instagram.addEventListener("mouseover", function(){
+    instagram.style.animationName = "expandIcons"
+    instagram.style.animationDuration = "2s"
+    instagram.style.width = "80px"
+    instagram.style.height = "80px"
+})
+
+instagram.addEventListener("mouseout", function() {
+    instagram.style.animationName = "expandIcons2"
+    instagram.style.animationDuration = "1s"
+    instagram.style.height = "60px"
+    instagram.style.width = "60px"
+})
+github.addEventListener("mouseover", function(){
+    github.style.animationName = "expandIcons"
+    github.style.animationDuration = "2s"
+    github.style.width = "80px"
+    github.style.height = "80px"
+})
+
+github.addEventListener("mouseout", function() {
+    github.style.animationName = "expandIcons2"
+    github.style.animationDuration = "1s"
+    github.style.height = "60px"
+    github.style.width = "60px"
+    
+})
+
 function showSkills() {
     document.getElementById("showProjectsButton").style.display = "none"
     document.getElementById("showBioButton").style.display = "none"
@@ -144,7 +210,7 @@ function doDropAnimationSkills() {
 function doUndropAnimationSkills() {
     mainDiv.style.animationName = "doUndropAnimationSkills"
     mainDiv.style.animationDuration = "2s"
-    mainDiv.style.height = "390px"
+    mainDiv.style.height = "470px"
     mainDiv.style.background = "none"
 }
 
@@ -158,7 +224,7 @@ function doDropAnimationBio() {
 function doUndropAnimationBio() {
     mainDiv.style.animationName = "doUndropAnimationBio"
     mainDiv.style.animationDuration = "2s"
-    mainDiv.style.height = "390px"
+    mainDiv.style.height = "470px"
     mainDiv.style.background = "none"
 }
 
@@ -172,7 +238,7 @@ function doDropAnimationProjects() {
 function doUndropAnimationProjects() {
     mainDiv.style.animationName = "doUndropAnimationProjects"
     mainDiv.style.animationDuration = "2s"
-    mainDiv.style.height = "390px"
+    mainDiv.style.height = "470px"
     mainDiv.style.background = "none"
 }
 /*

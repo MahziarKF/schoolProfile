@@ -20,44 +20,35 @@ body {
     margin-left: 375px;
     width: 600px;
     box-shadow: rgb(37, 40, 43) 0px 20px 30px -10px;
-    height: 390px;/* h = 350px - w = 400*/
+    height: 470px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
-/*
-@keyframes example {
-    from  {padding: ;}
-    
+#github {
+    margin-left: 32px;
 }
-#holder:hover {
-    animation-name: example;
-    animation-duration: 5s;
+#name {
+    margin-bottom: 0px;
 }
-*/
 #profilePic {
     margin-top: 20px;
-}/*
-#showSkillsButton, #hideSkillsButton {
-    font-weight: bold;
-    border: 2px solid rgb(153, 132, 12);
-    box-shadow: rgb(38, 57, 77) 0px 5px 9px -1px;
-    padding-right: 30px;
-    padding-left: 32px;
-    margin-left: 40px;
-    background-color: rgb(196, 133, 16);
 }
-#showProjectsButton, #hideProjectsButton {
-    margin-left: 40px;
-    box-shadow: rgb(38, 57, 77) 0px 5px 9px -1px;
-    padding-right: 30px;
-    background-color: rgba(30, 30, 165, 0.795);
-    border: 1px solid rgba(14, 14, 126, 0.836);
-    border: none;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 35px;
+@keyframes expandIcons {
+    from {width: 60px; height: 60px;}
+    to {width: 80px; height: 80px;}
 }
-*/
+@keyframes expandIcons2 {
+    from {width: 80px; height: 80px;}
+    to {width: 60px; height: 60px;}
+}
+.icons {
+    width: 60px;
+    height: 60px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    border-radius: 25%;
+    margin-left: 20px;
+}
 #showBioButton,#showSocials, #hideBioButton,#showSkillsButton,#hideSkillsButton, #showProjectsButton,#hideProjectsButton {
     width: 150px;
     height: 45px;
@@ -106,45 +97,31 @@ p {
 .hiddenButtons {
     display: none;
 }
-/*
-@keyframes changeDiv {
-    from {background: none;}
-    to {background: rgb(255, 255, 255);}
-}
-@keyframes changeDiv2 {
-    from {background: white;}
-    to {background: none;}
-}
-*/
 @keyframes doDropAnimationSkills {
-    from {height: 390px;background: none;}
+    from {height: 470px;background: none;}
     to {height: 790px;background: white;}
 }
 @keyframes doUndropAnimationSkills {
     from {height: 790px;background: white;}
-    to {height: 390px;background: none;}
+    to {height: 470px;background: none;}
 }
 @keyframes doDropAnimationProjects {
-    from {height: 390px;background: none;}
+    from {height: 470px;background: none;}
     to {height: 1100px;background: white;}
 }
 @keyframes doUndropAnimationProjects {
     from {height: 1100px;background: white;}
-    to {height: 390px;background: none;}
+    to {height: 470px;background: none;}
 }
 @keyframes expandButton {
     from {}
     to {}
 }
 @keyframes doDropAnimationBio {
-    from {height: 390px;background: none;}
+    from {height: 470px;background: none;}
     to {height: 880px;background: white;}
 }
 @keyframes doUndropAnimationBio {
     from {height: 880px;background: white;}
-    to {height: 390px;background: none;}
-}/*
-@keyframes doUndropAnimationBioForSocial {
-    from {margin-left: 375px;height: 880px;background: white;}
-    to {margin-left: 20px;height: 390px;background: none;}
-}*/
+    to {height: 470px;background: none;}
+}
