@@ -13,13 +13,34 @@ const bioDiv = document.getElementById("bioDiv")
 const activateButton = document.getElementById("activate")
 const firstDiv = document.getElementById("first")
 const holder1 = document.getElementById("holder1")
-const pfp = document.getElementById("pfp")
+const pfp = document.getElementById('profilePic')
 const name = document.getElementById("name")
 const discord = document.getElementById("discord")
 const instagram = document.getElementById("instagram")
 const telegram = document.getElementById("telegram")
 const github = document.getElementById("github")
-
+const nextImageBtn = document.getElementById('nextImageBtn')
+let currentImage = 1
+nextImageBtn.addEventListener('click', function(){
+    nextImage()
+})
+// gets the current image number ans it to renderImage() so the function shows the next image currectly
+function nextImage(){
+    if (currentImage == 1) {
+        currentImage = 2
+        // it was late at night i'll add the fadeIn & fadeOut animations later ig :)
+        pfp.src = 'pics/2.jpg'
+    } else if (currentImage == 2) {
+        currentImage = 3
+        pfp.src = 'pics/3.jpg'
+    }else if (currentImage == 3) {
+        currentImage = 4
+        pfp.src = 'pics/4.jpg'
+    }else if (currentImage == 4) {
+        currentImage = 1
+        pfp.src = "pics/1.jpg"
+    }
+}
 
 
 discord.addEventListener("mouseover", function(){
@@ -203,66 +224,40 @@ function changeBg2() {
 function doDropAnimationSkills() {
     mainDiv.style.animationName = "doDropAnimationSkills"
     mainDiv.style.animationDuration = "2s"
-    mainDiv.style.height = "790px"
+    mainDiv.style.height = "900px"
     mainDiv.style.background = "white"
 }
 
 function doUndropAnimationSkills() {
     mainDiv.style.animationName = "doUndropAnimationSkills"
     mainDiv.style.animationDuration = "2s"
-    mainDiv.style.height = "470px"
+    mainDiv.style.height = "500px"
     mainDiv.style.background = "none"
 }
 
 function doDropAnimationBio() {
     mainDiv.style.animationName = "doDropAnimationBio"
     mainDiv.style.animationDuration = "2s"
-    mainDiv.style.height = "880px"
+    mainDiv.style.height = "910px"
     mainDiv.style.background = "white"
 }
 
 function doUndropAnimationBio() {
     mainDiv.style.animationName = "doUndropAnimationBio"
     mainDiv.style.animationDuration = "2s"
-    mainDiv.style.height = "470px"
+    mainDiv.style.height = "500px"
     mainDiv.style.background = "none"
 }
 
 function doDropAnimationProjects() {
     mainDiv.style.animationName = "doDropAnimationProjects"
     mainDiv.style.animationDuration = "2s"
-    mainDiv.style.height = "1100px"
+    mainDiv.style.height = "1130px"
     mainDiv.style.background = "white"
 }
-
 function doUndropAnimationProjects() {
     mainDiv.style.animationName = "doUndropAnimationProjects"
     mainDiv.style.animationDuration = "2s"
-    mainDiv.style.height = "470px"
+    mainDiv.style.height = "500px"
     mainDiv.style.background = "none"
 }
-/*
-function doSocialAnimations() {
-    closeOthersForSocial()
-    //socialUp()
-}
-
-function closeOthersForSocial() {
-    doUndropAnimationBio()
-    hideBio()
-    hideButtons()
-    document.getElementById("showSocials").style.display = "none"
-    socialLeft()
-}
-
-function hideButtons() {
-    showBioButton.style.display = "none"
-    showProjectsButton.style.display = "none"
-    showSkillsButton.style.display = "none"
-}
-
-function socialLeft() {
-    mainDiv.style.animationName = "doUndropAnimationBioForSocial"
-    mainDiv.style.animationDuration = "3s"
-    mainDiv.style.marginLeft = "20px"
-}*/
