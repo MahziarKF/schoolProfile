@@ -1,5 +1,4 @@
-
-
+const body = document.getElementById('body')
 const showSkillsButton = document.getElementById("showSkillsButton")
 const showBioButton = document.getElementById("showBioButton")
 const showProjectsButton = document.getElementById("showProjectsButton")
@@ -25,6 +24,12 @@ nextImageBtn.addEventListener('click', function(){
     nextImage()
 })
 // gets the current image number ans it to renderImage() so the function shows the next image currectly
+coverBackground()
+function coverBackground(){
+    body.style.backgroundImage = 'url("styles/bgNew.jpg")'
+    body.style.backgroundSize = 'cover'
+    body.style.backgroundRepeat = 'no-repeat'
+}
 function nextImage(){
     if (currentImage == 1) {
         currentImage = 2
@@ -224,40 +229,76 @@ function changeBg2() {
 function doDropAnimationSkills() {
     mainDiv.style.animationName = "doDropAnimationSkills"
     mainDiv.style.animationDuration = "2s"
+    body.style.animationName = 'ebfs1'
+    body.style.animationDuration = '1s'
     mainDiv.style.height = "900px"
     mainDiv.style.background = "white"
+    body.style.height = '920px'
+    body.style.backgroundImage = 'url("styles/bgNew.jpg")'
+    body.style.backgroundSize = 'cover'
+    body.style.backgroundRepeat = 'no-repeat'
 }
 
 function doUndropAnimationSkills() {
     mainDiv.style.animationName = "doUndropAnimationSkills"
     mainDiv.style.animationDuration = "2s"
+    body.style.animationName = 'ebfs2'
+    body.style.animationDuration = '1s'
     mainDiv.style.height = "500px"
     mainDiv.style.background = "none"
+    body.style.height = '628px'
+    body.style.backgroundImage = 'url("styles/bgNew.jpg")'
+    body.style.backgroundSize = 'cover'
+    body.style.backgroundRepeat = 'no-repeat'
 }
 
 function doDropAnimationBio() {
     mainDiv.style.animationName = "doDropAnimationBio"
     mainDiv.style.animationDuration = "2s"
+    body.style.animationName = 'ebfb1'
+    body.style.animationDuration = '1s'
     mainDiv.style.height = "910px"
     mainDiv.style.background = "white"
+    body.style.height = '930px'
+    body.style.backgroundImage = 'url("styles/bgNew.jpg")'
+    body.style.backgroundSize = 'cover'
+    body.style.backgroundRepeat = 'no-repeat'
 }
 
 function doUndropAnimationBio() {
     mainDiv.style.animationName = "doUndropAnimationBio"
     mainDiv.style.animationDuration = "2s"
+    body.style.animationName = 'ebfb2'
+    body.style.animationDuration = '1s'
     mainDiv.style.height = "500px"
     mainDiv.style.background = "none"
+    body.style.height = '628px'
+    body.style.backgroundImage = 'url("styles/bgNew.jpg")'
+    body.style.backgroundSize = 'cover'
+    body.style.backgroundRepeat = 'no-repeat'
 }
 
 function doDropAnimationProjects() {
     mainDiv.style.animationName = "doDropAnimationProjects"
     mainDiv.style.animationDuration = "2s"
+    body.style.animationName = 'ebfp1'
+    body.style.animationDuration = '1s'
     mainDiv.style.height = "1130px"
     mainDiv.style.background = "white"
+    body.style.height = '1150px'
+    body.style.backgroundImage = 'url("styles/bgNew.jpg")'
+    body.style.backgroundSize = 'cover'
+    body.style.backgroundRepeat = 'no-repeat'
 }
 function doUndropAnimationProjects() {
     mainDiv.style.animationName = "doUndropAnimationProjects"
     mainDiv.style.animationDuration = "2s"
+    body.style.animationName = 'ebfp2w'
+    body.style.animationDuration = '1s'
     mainDiv.style.height = "500px"
     mainDiv.style.background = "none"
+    body.style.height = '628px'
+    body.style.backgroundImage = 'url("styles/bgNew.jpg")'
+    body.style.backgroundSize = 'cover'
+    body.style.backgroundRepeat = 'no-repeat'
 }
