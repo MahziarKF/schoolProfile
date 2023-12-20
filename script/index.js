@@ -302,3 +302,79 @@ function doUndropAnimationProjects() {
     body.style.backgroundSize = 'cover'
     body.style.backgroundRepeat = 'no-repeat'
 }
+showSkillsButton.addEventListener('mouseover', function(){
+    showSkillsButton.style.animationName = 'bioButtonHover'
+    showSkillsButton.style.animationDuration = '1s'
+    showSkillsButton.style.background = 'rgb(204, 203, 203)'
+    showSkillsButton.style.borderRadius = '45px'
+})
+hideSkillsButton.addEventListener('mouseover', function(){
+    hideSkillsButton.style.animationName = 'bioButtonHover'
+    hideSkillsButton.style.animationDuration = '1s'
+    hideSkillsButton.style.background = 'rgb(204, 203, 203)'
+    hideSkillsButton.style.borderRadius = '45px'
+})
+showBioButton.addEventListener('mouseover', function(){
+    showBioButton.style.animationName = 'bioButtonHover'
+    showBioButton.style.animationDuration = '1s'
+    showBioButton.style.background = 'rgb(204, 203, 203)'
+    showBioButton.style.borderRadius = '45px'
+})
+hideBioButton.addEventListener('mouseover', function(){
+    hideBioButton.style.animationName = 'bioButtonHover'
+    hideBioButton.style.animationDuration = '1s'
+    hideBioButton.style.background = 'rgb(204, 203, 203)'
+    hideBioButton.style.borderRadius = '45px'
+})
+hideProjectsButton.addEventListener('mouseover', function(){
+    hideProjectsButton.style.animationName = 'bioButtonHover'
+    hideProjectsButton.style.animationDuration = '1s'
+    hideProjectsButton.style.background = 'rgb(204, 203, 203)'
+    hideProjectsButton.style.borderRadius = '45px'
+})
+showProjectsButton.addEventListener('mouseover', function(){
+    showProjectsButton.style.animationName = 'bioButtonHover'
+    showProjectsButton.style.animationDuration = '1s'
+    showProjectsButton.style.background = 'rgb(204, 203, 203)'
+    showProjectsButton.style.borderRadius = '45px'
+})
+showSkillsButton.addEventListener('mouseout', function(){
+    showSkillsButton.style.animationName = 'bioButtonNotHover'
+    showSkillsButton.style.animationDuration = '1s'
+    showSkillsButton.style.background = 'none'
+    showSkillsButton.style.borderRadius = '0px'
+})
+hideSkillsButton.addEventListener('mouseout', function(){
+    hideSkillsButton.style.animationName = 'bioButtonNotHover'
+    hideSkillsButton.style.animationDuration = '1s'
+    hideSkillsButton.style.background = 'none'
+    hideSkillsButton.style.borderRadius = '0px'
+})
+showBioButton.addEventListener('mouseout', function(){
+    showBioButton.style.animationName = 'bioButtonNotHover'
+    showBioButton.style.animationDuration = '1s'
+    showBioButton.style.background = 'none'
+    showBioButton.style.borderRadius = '0px'
+})
+
+hideBioButton.addEventListener('mouseout', function(){
+    hideBioButton.style.animationName = 'bioButtonNotHover'
+    hideBioButton.style.animationDuration = '1s'
+    hideBioButton.style.background = 'none'
+    hideBioButton.style.borderRadius = '0px'
+})
+
+showProjectsButton.addEventListener('mouseout', function(){
+    showProjectsButton.style.animationName = 'bioButtonNotHover'
+    showProjectsButton.style.animationDuration = '1s'
+    showProjectsButton.style.background = 'none'
+    showProjectsButton.style.borderRadius = '0px'
+})
+
+hideProjectsButton.addEventListener('mouseout', function(){
+    hideProjectsButton.style.animationName = 'bioButtonNotHover'
+    hideProjectsButton.style.animationDuration = '1s'
+    hideProjectsButton.style.background = 'none'
+    hideProjectsButton.style.borderRadius = '0px'
+})
+
