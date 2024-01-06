@@ -127,10 +127,10 @@ p {
 }
 @keyframes doDropAnimationProjects {
     from {height: 500px;background: none;}
-    to {height: 1100px;background: white;}
+    to {height: 1500px;background: white;}
 }
 @keyframes doUndropAnimationProjects {
-    from {height: 1100px;background: white;}
+    from {height: 1500px;background: white;}
     to {height: 500px;background: none;}
 }
 @keyframes expandButton {
@@ -155,10 +155,10 @@ p {
 }
 @keyframes ebfp1 {
     from{height: 628px;}
-    to{height: 1150px;}
+    to{height: 1520px;}
 }
 @keyframes ebfp2 {
-    from{height: 1150px;}
+    from{height: 1520px;}
     to{height: 628px;}
 }
 @keyframes ebfb1 {

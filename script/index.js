@@ -116,7 +116,7 @@ function showSkills() {
         <li><h2>Java ( Intermediate)</h2> </li>
         <li><h2>C# (Intermediate)</h2> </li>
         <li><h2>Python ( Beginner-Intermediate)</h2> </li>
-        <li><h2>HTML,CSS ( Intermediate)</h2></li>
+        <li><h2>HTML,CSS,PHP( Intermediate)</h2></li>
         <li><h2>JavaScript ( Intermediate-Advanced)</h2></li>
         
     </ul>`
@@ -143,9 +143,17 @@ function showProjects() {
 
     projectsDiv.innerHTML = `
     <ul>
+        <li><a href="https://mahziarkf.github.io/patternGame">Pattern Game</a></li><br>
+        <p>Test your pattern skills, I doubt it. play it an get a score<br>
+        and prove me wrong.<br>
+        Description : this is a simple pattern game with 3 boxes that with 3 different color<br>
+        on page load the pattern sets to a length of 3 random numbers and when clicked start game<br>
+        it shows each part of pattern for a total of 1.5 seconds.<br>
+        if you manage to replicate the pattern, the pattern increases by 1 in a random order.<br>
+        but if you lose the page gets reloaded and your progress will reset.</p>
         <li><a href="https://mahziarkf.github.io/Projects-signupLoginPage/" class="projectLinks">Login Page</a></li>
         <p><b>Description : </b> this is a login/signup page<br>
-        with the ability to actualy create an account and login<br>
+        with the ability to create an account and login<br>
         First click on New? button then create an account<br>
         After creating an account go back to the login option<br>
         then type in your username and password.<br>
@@ -283,9 +291,9 @@ function doDropAnimationProjects() {
     mainDiv.style.animationDuration = "2s"
     body.style.animationName = 'ebfp1'
     body.style.animationDuration = '1s'
-    mainDiv.style.height = "1130px"
+    mainDiv.style.height = "1500px"
     mainDiv.style.background = "white"
-    body.style.height = '1150px'
+    body.style.height = '1520px'
     body.style.backgroundImage = 'url("styles/bgNew.jpg")'
     body.style.backgroundSize = 'cover'
     body.style.backgroundRepeat = 'no-repeat'
