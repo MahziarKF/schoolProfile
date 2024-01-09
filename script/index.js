@@ -143,6 +143,8 @@ function showProjects() {
 
     projectsDiv.innerHTML = `
     <ul>
+        <li><a href="https://mahziarkf.github.io/ticTacToe">Tic Tac Toe</a></li><br>
+        <p>Have a fun time playing tic tac toe :)<p>
         <li><a href="https://mahziarkf.github.io/patternGame">Pattern Game</a></li><br>
         <p>Test your pattern skills, I doubt it. play it an get a score<br>
         and prove me wrong.<br>
@@ -291,9 +293,9 @@ function doDropAnimationProjects() {
     mainDiv.style.animationDuration = "2s"
     body.style.animationName = 'ebfp1'
     body.style.animationDuration = '1s'
-    mainDiv.style.height = "1500px"
+    mainDiv.style.height = "1610px"
     mainDiv.style.background = "white"
-    body.style.height = '1520px'
+    body.style.height = '1630px'
     body.style.backgroundImage = 'url("styles/bgNew.jpg")'
     body.style.backgroundSize = 'cover'
     body.style.backgroundRepeat = 'no-repeat'
