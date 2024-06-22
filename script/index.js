@@ -143,8 +143,8 @@ function showProjects() {
 
     projectsDiv.innerHTML = `
     <ul>
-        <li><a href="https://mahziarkf.github.io/ticTacToe">Tic Tac Toe</a></li><br>
-        <p>Have a fun time playing tic tac toe :)<p>
+        <li><a href="https://mahziarkf.github.io/mines/">Mines</a></li><br>
+        <p>It's A surprise!<p>
         <li><a href="https://mahziarkf.github.io/patternGame">Pattern Game</a></li><br>
         <p>Test your pattern skills, I doubt it. play it an get a score<br>
         and prove me wrong.<br>
