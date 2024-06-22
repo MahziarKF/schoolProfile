@@ -116,7 +116,7 @@ function showSkills() {
         <li><h2>Java ( Intermediate)</h2> </li>
         <li><h2>C# (Intermediate)</h2> </li>
         <li><h2>Python ( Beginner-Intermediate)</h2> </li>
-        <li><h2>HTML,CSS ( Intermediate)</h2></li>
+        <li><h2>HTML,CSS,PHP( Intermediate)</h2></li>
         <li><h2>JavaScript ( Intermediate-Advanced)</h2></li>
         
     </ul>`
@@ -143,9 +143,19 @@ function showProjects() {
 
     projectsDiv.innerHTML = `
     <ul>
+        <li><a href="https://mahziarkf.github.io/mines/">Mines</a></li><br>
+        <p>It's A surprise!<p>
+        <li><a href="https://mahziarkf.github.io/patternGame">Pattern Game</a></li><br>
+        <p>Test your pattern skills, I doubt it. play it an get a score<br>
+        and prove me wrong.<br>
+        Description : this is a simple pattern game with 3 boxes that with 3 different color<br>
+        on page load the pattern sets to a length of 3 random numbers and when clicked start game<br>
+        it shows each part of pattern for a total of 1.5 seconds.<br>
+        if you manage to replicate the pattern, the pattern increases by 1 in a random order.<br>
+        but if you lose the page gets reloaded and your progress will reset.</p>
         <li><a href="https://mahziarkf.github.io/Projects-signupLoginPage/" class="projectLinks">Login Page</a></li>
         <p><b>Description : </b> this is a login/signup page<br>
-        with the ability to actualy create an account and login<br>
+        with the ability to create an account and login<br>
         First click on New? button then create an account<br>
         After creating an account go back to the login option<br>
         then type in your username and password.<br>
@@ -283,9 +293,9 @@ function doDropAnimationProjects() {
     mainDiv.style.animationDuration = "2s"
     body.style.animationName = 'ebfp1'
     body.style.animationDuration = '1s'
-    mainDiv.style.height = "1130px"
+    mainDiv.style.height = "1610px"
     mainDiv.style.background = "white"
-    body.style.height = '1150px'
+    body.style.height = '1630px'
     body.style.backgroundImage = 'url("styles/bgNew.jpg")'
     body.style.backgroundSize = 'cover'
     body.style.backgroundRepeat = 'no-repeat'
@@ -302,3 +312,79 @@ function doUndropAnimationProjects() {
     body.style.backgroundSize = 'cover'
     body.style.backgroundRepeat = 'no-repeat'
 }
+showSkillsButton.addEventListener('mouseover', function(){
+    showSkillsButton.style.animationName = 'bioButtonHover'
+    showSkillsButton.style.animationDuration = '1s'
+    showSkillsButton.style.background = 'rgb(204, 203, 203)'
+    showSkillsButton.style.borderRadius = '45px'
+})
+hideSkillsButton.addEventListener('mouseover', function(){
+    hideSkillsButton.style.animationName = 'bioButtonHover'
+    hideSkillsButton.style.animationDuration = '1s'
+    hideSkillsButton.style.background = 'rgb(204, 203, 203)'
+    hideSkillsButton.style.borderRadius = '45px'
+})
+showBioButton.addEventListener('mouseover', function(){
+    showBioButton.style.animationName = 'bioButtonHover'
+    showBioButton.style.animationDuration = '1s'
+    showBioButton.style.background = 'rgb(204, 203, 203)'
+    showBioButton.style.borderRadius = '45px'
+})
+hideBioButton.addEventListener('mouseover', function(){
+    hideBioButton.style.animationName = 'bioButtonHover'
+    hideBioButton.style.animationDuration = '1s'
+    hideBioButton.style.background = 'rgb(204, 203, 203)'
+    hideBioButton.style.borderRadius = '45px'
+})
+hideProjectsButton.addEventListener('mouseover', function(){
+    hideProjectsButton.style.animationName = 'bioButtonHover'
+    hideProjectsButton.style.animationDuration = '1s'
+    hideProjectsButton.style.background = 'rgb(204, 203, 203)'
+    hideProjectsButton.style.borderRadius = '45px'
+})
+showProjectsButton.addEventListener('mouseover', function(){
+    showProjectsButton.style.animationName = 'bioButtonHover'
+    showProjectsButton.style.animationDuration = '1s'
+    showProjectsButton.style.background = 'rgb(204, 203, 203)'
+    showProjectsButton.style.borderRadius = '45px'
+})
+showSkillsButton.addEventListener('mouseout', function(){
+    showSkillsButton.style.animationName = 'bioButtonNotHover'
+    showSkillsButton.style.animationDuration = '1s'
+    showSkillsButton.style.background = 'none'
+    showSkillsButton.style.borderRadius = '0px'
+})
+hideSkillsButton.addEventListener('mouseout', function(){
+    hideSkillsButton.style.animationName = 'bioButtonNotHover'
+    hideSkillsButton.style.animationDuration = '1s'
+    hideSkillsButton.style.background = 'none'
+    hideSkillsButton.style.borderRadius = '0px'
+})
+showBioButton.addEventListener('mouseout', function(){
+    showBioButton.style.animationName = 'bioButtonNotHover'
+    showBioButton.style.animationDuration = '1s'
+    showBioButton.style.background = 'none'
+    showBioButton.style.borderRadius = '0px'
+})
+
+hideBioButton.addEventListener('mouseout', function(){
+    hideBioButton.style.animationName = 'bioButtonNotHover'
+    hideBioButton.style.animationDuration = '1s'
+    hideBioButton.style.background = 'none'
+    hideBioButton.style.borderRadius = '0px'
+})
+
+showProjectsButton.addEventListener('mouseout', function(){
+    showProjectsButton.style.animationName = 'bioButtonNotHover'
+    showProjectsButton.style.animationDuration = '1s'
+    showProjectsButton.style.background = 'none'
+    showProjectsButton.style.borderRadius = '0px'
+})
+
+hideProjectsButton.addEventListener('mouseout', function(){
+    hideProjectsButton.style.animationName = 'bioButtonNotHover'
+    hideProjectsButton.style.animationDuration = '1s'
+    hideProjectsButton.style.background = 'none'
+    hideProjectsButton.style.borderRadius = '0px'
+})
+
